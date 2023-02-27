@@ -58,7 +58,7 @@ overlay.addEventListener("click", testimonialsModalFunc);
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
+const selectValue = document.querySelector("[data-select-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 select.addEventListener("click", function () { elementToggleFunc(this); });
@@ -69,9 +69,11 @@ for (let i = 0; i < selectItems.length; i++) {
 
     let selectedValue = this.innerText.toLowerCase();
     selectValue.innerText = this.innerText;
+    console.log(1)
+    console.log(selectedValue)
     elementToggleFunc(select);
     filterFunc(selectedValue);
-
+    console.log(2)
   });
 }
 
@@ -79,14 +81,17 @@ for (let i = 0; i < selectItems.length; i++) {
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
-
+  console.log(3)
   for (let i = 0; i < filterItems.length; i++) {
 
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+      console.log(4)
+    } else if (selectedValue === filterItems[i].dataset.category.toLowerCase()) {
       filterItems[i].classList.add("active");
+      console.log(5)
     } else {
+      console.log(6)
       filterItems[i].classList.remove("active");
     }
 
