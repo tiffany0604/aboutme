@@ -85,8 +85,9 @@ const filterFunc = function (selectedValue) {
   for (let i = 0; i < filterItems.length; i++) {
 
     if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-      console.log(4)
+      if (filterItems[i].dataset.category.toLowerCase() !== "🌲fav courses"){      
+        filterItems[i].classList.add("active");
+      console.log(4)}
     } else if (selectedValue === filterItems[i].dataset.category.toLowerCase()) {
       filterItems[i].classList.add("active");
       console.log(5)
