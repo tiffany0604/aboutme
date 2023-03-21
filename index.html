@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <div class="hero-full-container background-image-container white-text-container" style="background-image: url('./assets/images/starsinthesky.jpg')">
-  <body>
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tiff's Site</title>
-
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="icon" type="image/x-icon" href="./assets/images/logo.ico">
 
   <!--
     - custom css link
@@ -27,6 +24,8 @@
 </head>
 
 
+<div class="hero-full-container background-image-container white-text-container" style="background-image: url('./assets/images/starsinthesky.jpg')">
+<body>
   <!--
     - #MAIN
   -->
@@ -136,15 +135,21 @@
             </a>
           </li>
 
-          <li class="social-item">   
+          <!-- <li class="social-item">   
             <a href="https://www.instagram.com/bananatiff/?hl=en" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
-          </li>
+          </li> -->
 
           <li class="social-item">
             <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=-UEXE3MAAAAJ" class="social-link">
               <ion-icon name="school-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/tiffany-chun-an-wang/g" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
@@ -242,7 +247,6 @@
                 <a href = "https://web.stanford.edu/group/hyhwang/">
                 <img src="./assets/images/logo-stanford.png
                 " alt="design icon" width="60">
-                </a>
               </div>
 
               <div class="service-content-box">
@@ -251,6 +255,7 @@
                 <p class="service-item-text">
                   Stanford University
                 </p>
+              </a>
               </div>
 
             </li>
@@ -260,7 +265,6 @@
               <div class="service-icon-box">
                 <a href = "https://natea.org/">
                 <img src="./assets/images/logo-natea.png" alt="Web development icon" width="60">
-              </a>
               </div>
 
               <div class="service-content-box">
@@ -269,13 +273,14 @@
                 <p class="service-item-text">
                   NATEA - North America Taiwanese Engineering and Science Association
                 </p>
+              </a>
               </div>
-
             </li>
 
             <li class="service-item">
 
               <div class="service-icon-box">
+                <a href = "https://salonpsi.sites.stanford.edu">
                 <img src="./assets/images/logo-stanford.png
                 " alt="design icon" width="60">
               </div>
@@ -286,6 +291,7 @@
                 <p class="service-item-text">
                   Stanford Salon Psi - Philosophy, Science and Interdisciplinary Initiative
                 </p>
+              </a>
               </div>
 
             </li>
@@ -298,7 +304,7 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Podcast Host</h4>
+                <h4 class="h4 service-item-title">Under Construction... a Podcast</h4>
 
                 <p class="service-item-text">
                   Good Question 這是個好問題
@@ -529,7 +535,7 @@
           </ul>
 
 
-          <h6 style="color:whitesmoke; text-align: end ;">Site Last Updated @ March 2nd, 2023</h6>
+          <h6 style="color:whitesmoke; text-align: end ;">Site Last Updated @ March 20th, 2023</h6>
 
         </section>
 
@@ -648,6 +654,7 @@
 
               <p class="timeline-text">
                 Stanford Salon Psi aka Philosophy, Science and Interdisciplinary Initiative
+                <a class="timeline-text" style="color:darkcyan" href="https://salonpsi.sites.stanford.edu"> Learn more</a>
               </p>
 
             </li>
@@ -679,9 +686,12 @@
 
             </li>
 
-
             <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Organizer/Moderator/Panelist...</h4>
               <h4 class="h4 timeline-item-title">...Check out ⭐️ My Portfolio ⭐️ for more of the fun stuff!</h4>         
+              <span>2020 - current</span>
+
               <p class="timeline-text">
                 <button class="navbar-link" data-nav-link style="color:rgb(205, 245, 245);">Portfolio</button>
                 Your are certainly welcome to contact me if you want to chat & learn more about any of my experiences in Science, Tech, Education, NGOs and policies!
@@ -831,16 +841,17 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Workshop</button>
-            </li>
-
-            <li class="filter-item">
               <button data-filter-btn>Organizer</button>
             </li>
 
             <li class="filter-item">
               <button data-filter-btn>Moderator/Panelist</button>
             </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Workshop</button>
+            </li>
+
 
             <li class="filter-item">
               <button data-filter-btn>Conference</button>
@@ -875,15 +886,15 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Workshop</button>
-              </li>
-
-              <li class="select-item">
                 <button data-select-item>Organizer</button>
               </li>
 
               <li class="select-item">
                 <button data-select-item>Moderator/Panelist</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Workshop</button>
               </li>
 
               <li class="select-item">
@@ -907,19 +918,38 @@
           <ul class="project-list">
 
           <li class="project-item active" data-filter-item data-category="Organizer">
-              <a href="#">
+              <a href="https://natea.org/events/2023-womens-summit/?occurrence=2023-03-24">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="arrival" loading="lazy">
+                  <img src="./assets/images/port-ws2023.jpg" alt="arrival" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Women's Summit 2023</h3>
 
                 <p class="project-category">Organizer</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item active" data-filter-item data-category="Moderator/Panelist">
+              <a href="https://semispace.sites.stanford.edu">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/port-semispace.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Semiconductor Manufacturing in the Space</h3>
+
+                <p class="project-category">Panelist</p>
 
               </a>
             </li>
@@ -1120,7 +1150,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                  <img src="./assets/images/port-dasein.png" alt="task manager" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Salon Psi x Cafe Philo</h3>
